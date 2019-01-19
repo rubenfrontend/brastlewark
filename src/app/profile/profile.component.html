@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 mt-3">
+      <h1 *ngFor="let gnome of info">Details {{gnome.name}}</h1>
+      <p><strong>Friends: </strong></p>
+      <ul *ngFor="let gnome of info; let i = index;">
+        <li *ngFor="let friends of gnome.friends;">
+          {{friends}}
+        </li>
+      </ul>
+      <p><strong>Professions: </strong></p> 
+      <ul *ngFor="let gnome of info; let i = index;">
+          <li *ngFor="let professions of gnome.professions;">
+            {{professions}}
+          </li>
+        </ul> 
+    </div>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+// @Widget
+.title-widget {
+    color: #4a4a4a;
+    font-size: 1.3rem;
+}
+
+.widgetContainer {
+    margin-top: 20px;
+    margin-left: inherit;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card.col-xl-2 {
+    min-width: 24em !important;
+    min-height: 21em !important;
+    max-height: 21em !important;
+}
+
+.d-inline-block.pull-right.p-0.pt-2.col-4 {
+    text-align: right;
+    position: relative;
+}
+
+img.p-0.center-block {
+    position: relative;
+    top: -5em;
+}
