@@ -1,0 +1,26 @@
+<div class="container col-12">
+  <div class="row col-12 mt-5">
+    <input type="text" class="form-control" [(ngModel)]="searchText" placeholder="Search by name (in lower case)">
+    <div class="sidebar">
+      <nav class="sidebar-nav">
+        <ul *ngFor="let gnome of info | filterByName : searchText" class="nav" >
+          <li class="nav-title text-center">
+            <span>Name: </span>{{gnome.name}}
+            <span>Id: </span>{{gnome.id}}
+            <span>Age: </span> {{gnome.age}}
+            <span>Weight: </span>{{gnome.weight}}
+            <span>Height: </span>{{gnome.height}}&nbsp;
+          </li>
+          <span>Friends:&nbsp;</span>
+          <li *ngFor="let friends of gnome.friends;">
+            {{friends}}&nbsp;
+          </li>
+          <span>Professions:&nbsp;</span>
+          <li *ngFor="let professions of gnome.professions;">
+            {{professions}}&nbsp; 
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>

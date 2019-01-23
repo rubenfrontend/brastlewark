@@ -1,0 +1,16 @@
+span {
+    font-weight: bold;
+}
+
+ul.nav {
+    border-top: solid thin;
+    border-left: solid thin;
+    border-right: solid thin;
+}
+
+ul.nav:last-child {
+    border-top: solid thin;
+    border-left: solid thin;
+    border-right: solid thin;
+    border-bottom: solid thin;
+}
